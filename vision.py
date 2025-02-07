@@ -39,15 +39,15 @@
 #     response=get_gemini_response(input,image)
 #     st.subheader("The response is: ") 
 #     st.write(response)
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 import streamlit as st
 import os
 import google.generativeai as genai 
 from PIL import Image
 
 # Load environment variables
-load_dotenv()
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+
+genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
 
 # Initialize the model
 model = genai.GenerativeModel("gemini-1.5-flash")
