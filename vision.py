@@ -1,3 +1,5 @@
+#<--------- coad to run on local machine --------->
+
 # from dotenv import load_dotenv
 # load_dotenv() # Load environment variables from .env file
 
@@ -39,6 +41,10 @@
 #     response=get_gemini_response(input,image)
 #     st.subheader("The response is: ") 
 #     st.write(response)
+
+# <------------ code for local machine ends here -------->
+
+
 #from dotenv import load_dotenv
 import streamlit as st
 import os
@@ -46,6 +52,7 @@ import google.generativeai as genai
 from PIL import Image
 
 # Load environment variables
+# in streamlit need to add secrates as api keys for better prevention of api leaks
 
 genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
 
@@ -95,7 +102,7 @@ st.markdown(
 st.markdown("<h1 style='text-align: center; color: #4CAF50;'>📷 GeminiVision - AI-Powered Image Analyzer 🚀 </h1>", unsafe_allow_html=True)
 
 # Input Section
-st.subheader("📝 Enter Text (Optional)")
+st.subheader("📝 Enter Text:")
 input_text = st.text_input("Describe what you want to know about the image", key="input")
 
 # Upload Image
