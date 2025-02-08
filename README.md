@@ -1,4 +1,4 @@
-# 📷 Gemini Vision – AI-Powered Image Analyzer
+# 📷 Gemini Vision – AI-Powered Image Analyzer 
 
 **Gemini Vision** is a **Streamlit-based AI application** that leverages **Google's Gemini AI** to analyze images and provide insightful responses.
 
@@ -88,4 +88,5 @@ Contributions are welcome! If you'd like to improve **Gemini Vision**, follow th
 ## 📩 Contact
 
 📧 **Email:** [akarshvante@gmail.com](mailto\:akarshvante@gmail.com)\
-🐙 **GitHub:** [AkarshVante](https://github.com/AkarshVante)
+🐙 **GitHub:** [AkarshVante](https://github.com/AkarshVante)\
+**Live:** [My app](https://geminivisionai.streamlit.app)
